@@ -172,7 +172,7 @@ function test_input($data) {
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <label for="maybe"class="col-sm-1 control-label" style="padding-bottom: 15px">Porque:</label>
+                                            <label for="maybe"class="col-sm-1 control-label" style="padding-bottom: 15px">Por qué?:</label>
                                             <textarea class="form-control" rows="5" id="maybe" ng-model="porque"></textarea>
                                             <span class="help-block" style="display: none;">Ingresa un correo v&aacute;lido</span>
                                         </div>
