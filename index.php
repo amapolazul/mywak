@@ -48,7 +48,7 @@ function test_input($data) {
 ?>
 
 <!-- HEADER -->
-<header class="animated bounce">
+<header class="animated rubberBand">
     <div class="container">
         <div class="row">
             <div class="cont">
