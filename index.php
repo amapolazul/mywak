@@ -48,12 +48,12 @@ function test_input($data) {
 ?>
 
 <!-- HEADER -->
-<header class="animated rubberBand">
+<header>
     <div class="container">
         <div class="row">
             <div class="cont">
                 <div class="col-xs-9 left">
-                    <img src="./images/landing2-04.png" class="img-responsive" alt="Responsive image">
+                    <img src="./images/landing2-04.png" class="img-responsive animated rubberBand" alt="Responsive image">
                 </div>
                 <div class="col-xs-3">
                     <div class="row">
