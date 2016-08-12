@@ -53,7 +53,7 @@ function test_input($data) {
         <div class="row">
             <div class="cont">
                 <div class="col-xs-9 left">
-                    <img src="./images/landing2-04.png" class="img-responsive animated rubberBand" alt="Responsive image">
+                    <img src="./images/landing2-04.png" class="img-responsive" alt="Responsive image">
                 </div>
                 <div class="col-xs-3">
                     <div class="row">
@@ -69,7 +69,7 @@ function test_input($data) {
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <img src="./images/landing2-03-02.png" class="img-responsive" alt="Responsive image" style="margin:0 auto;">
+                <img src="./images/landing2-03-02.png" class="img-responsive animated rubberBand" alt="Responsive image" style="margin:0 auto;">
             </div>
         </div>
         <div class="row">
