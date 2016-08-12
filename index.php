@@ -24,7 +24,7 @@
 <body>
 <?php
 // define variables and set to empty values
-$name = $email = $barrio = $pais = $ciudad = $hwyd = $hltdo = $optradio ="";
+$name = $email = $barrio = $pais = $ciudad = $hwyd = $hltdo = $optradio = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = test_input($_POST["name"]);
@@ -99,7 +99,7 @@ function test_input($data) {
                         <div class="panel-body">
                             <div class="col-sm-12">
                                 <!-- CONTACT FORM https://github.com/jonmbake/bootstrap3-contact-form -->
-                                <form role="form" id="feedbackForm" class="form-horizontal" method="post" action="<?$_SERVER["PHP_SELF"];?>">
+                                <form role="form" id="feedbackForm" class="form-horizontal" method="post" action="<?php $_SERVER["PHP_SELF"];?>">
                                     <div class="form-group">
                                         <label for="name" class="col-sm-2 control-label">Nombre</label>
                                         <div class="col-sm-10">
@@ -192,12 +192,14 @@ function test_input($data) {
 <!-- FOOTER -->
 <div class="container text-center">
     <div class="row">
-        <h3>Nuestros aliados waklovers</h3>
         <div class="col-sm-12">
+            <div class="col-sm-4">
+                <h3>Nuestros aliados waklovers</h3>
+            </div>
             <div class="col-sm-2 col-sm-offset-2">
                 <img src="./images/logo_centro_canino.jpg" class="img-responsive" alt="Responsive image">
             </div>
-            <div class="col-sm-6 col-sm-offset-2">
+            <div class="col-sm-2 col-sm-offset-2">
                 <img src="./images/logo_cruz_roja.jpg" class="img-responsive" alt="Responsive image">
             </div>
         </div>
