@@ -85,14 +85,14 @@ function test_input($data) {
     <div class="row">
         <div class="col-lg-12 middle-section text-center">
             <h2 class="welcome-text">¡SÉ EL PRIMERO EN CONOCERLO!</h2>
-            <p><span style="color:red">Mywak</span> será un servicio que te encantará  y ser el primero en conocerlo aún más. </p>
+            <p><span style="color:red; font-weight: bold">Mywak</span> será un servicio que te encantará  y ser el primero en conocerlo aún más. </p>
         </div>
     </div>
     <div class="jumbotron">
         <div class="container">
             <div class="row text-center">
                 <div class="text-center col-sm-12" style="padding-bottom: 30px">
-                    <h3>Llena la siguiente encuesta y por ser un mywak pionero  tendrás beneficios</h3>
+                    <h3>Llena la siguiente encuesta y por ser un <span style="font-weight: bold">mywak pionero</span> tendrás beneficios</h3>
                 </div>
                 <div class="col-sm-8 col-sm-offset-2">
                     <div class="panel">
