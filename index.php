@@ -69,12 +69,12 @@ function test_input($data) {
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <img src="./images/landing2-03-02.png" class="img-responsive animated bounce" alt="Responsive image" style="margin:0 auto;">
+                <img src="./images/landing2-03-02.png" class="img-responsive animated bounceInDown" alt="Responsive image" style="margin:0 auto;">
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <img src="./images/landing2-05.png" class="img-responsive animated bounceIn" alt="Responsive image" style="margin:0 auto;">
+                <img src="./images/landing2-05.png" class="img-responsive animated bounceInUp" alt="Responsive image" style="margin:0 auto;">
             </div>
         </div>
     </div>
