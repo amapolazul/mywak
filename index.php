@@ -99,40 +99,31 @@ function test_input($data) {
                 </div>
             </div>
         </div>
-        <div class="row text-center">
+        <div class="row">
             <div class="col-xs-2">
-                <div class="row">
-                    <div class="col-xs-12">
-                <div style="margin-top: 75px; margin-left: 117px;" class="wow infinite pulse col-xs-4" data-wow-duration="2s" data-wow-delay="3s">
+                <div style="margin-top: 75px; margin-left: 117px;" class="wow infinite flash" data-wow-duration="2s" data-wow-delay="3s">
                     <p class="words-banner">want</p>
                 </div>
-                <div style="margin-top: 48px; margin-left: 46px" class="wow infinite pulse col-xs-4" data-wow-delay="1s">
+                <div style="margin-top: 48px; margin-left: 46px" class="wow infinite pulse" data-wow-delay="1s">
                     <p class="words-banner">already</p>
                 </div>
-                <div style="margin-top: 76px;" class="wow infinite pulse col-xs-4" data-wow-duration="2s" data-wow-delay="4s">
+                <div style="margin-top: 76px;" class="wow infinite pulse" data-wow-duration="2s" data-wow-delay="4s">
                     <p class="words-banner">watch</p>
                 </div>
-                        </div>
-                    </div>
             </div>
             <div class="col-xs-8">
                 <img src="./images/logo-mywak-01.png" class="img-responsive animated bounceInDown" alt="Responsive image" style="margin:0 auto;">
             </div>
             <div class="col-xs-2">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div style="margin-top: 75px;" class="wow infinite pulse col-xs-4" data-wow-duration="3s" data-wow-delay="0s">
-                            <p class="words-banner">know</p>
-                        </div>
-                        <div style="margin-top: 48px; margin-left: 46px" class="wow infinite pulse col-xs-4" data-wow-delay="5s">
-                            <p class="words-banner">already</p>
-                        </div>
-                        <div style="margin-top: 76px; margin-left: 117px;" data-wow-duration="1s" class="wow infinite pulse col-xs-4" data-wow-delay="2s">
-                            <p class="words-banner">we</p>
-                        </div>
-                    </div>
+                <div style="margin-top: 75px;" class="wow infinite pulse" data-wow-duration="3s" data-wow-delay="0s">
+                    <p class="words-banner">know</p>
                 </div>
-
+                <div style="margin-top: 48px; margin-left: 46px" class="wow infinite pulse" data-wow-delay="5s">
+                    <p class="words-banner">already</p>
+                </div>
+                <div style="margin-top: 76px; margin-left: 117px;" data-wow-duration="4s" class="wow infinite pulse" data-wow-delay="2s">
+                    <p class="words-banner">we</p>
+                </div>
             </div>
         </div>
         <div class="row">
