@@ -24,7 +24,7 @@
 <body>
 <?php
 // define variables and set to empty values
-$name = $email = $barrio = $pais = $ciudad = $hwyd = $hltdo = $optradio = "";
+$name = $email = $barrio = $pais = $ciudad = $hwyd = $hltdo = $optradio = $porque = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = test_input($_POST["name"]);
@@ -36,7 +36,39 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hltdo = test_input($_POST["hltdo"]);
     $ciudad = test_input($_POST["ciudad"]);
     $optradio = test_input($_POST["optradio"]);
+    $porque = test_input($_POST["porque"]);
 
+    $to = "samantha@amapolazul.com";
+    $subject = "Correo de prueba";
+
+    $message =
+        '<html>'+
+        '<head>'+
+        '<title>Correo</title>'+
+        '</head>'+
+        '<body>'+
+        '<p>This email contains HTML Tags!</p>'+
+        '<table>'+
+        '<tr>'+
+        '<th>Firstname</th>'+
+        '<th>Lastname</th>'+
+        '</tr>'+
+        '<tr>'+
+        '<td>John</td>'+
+        '<td>Doe</td>'+
+        '</tr>'+
+        '</table>'+
+        '</body>'+
+        '</html>'
+    ;
+
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+
+    $headers .= 'From: chebbymar@gmail.com' . "\r\n";
+    $headers .= 'Cc: jason@amapolazul.com' . "\r\n";
+
+    mail($to,$subject,$message,$headers);
 }
 
 function test_input($data) {
@@ -67,9 +99,40 @@ function test_input($data) {
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-12">
-                <img src="./images/landing2-03-02.png" class="img-responsive animated bounceInDown" alt="Responsive image" style="margin:0 auto;">
+        <div class="row text-center">
+            <div class="col-xs-2">
+                <div class="row">
+                    <div class="col-xs-12">
+                <div style="margin-top: 75px; margin-left: 117px;" class="wow infinite pulse col-xs-4" data-wow-duration="2s" data-wow-delay="3s">
+                    <p class="words-banner">want</p>
+                </div>
+                <div style="margin-top: 48px; margin-left: 46px" class="wow infinite pulse col-xs-4" data-wow-delay="1s">
+                    <p class="words-banner">already</p>
+                </div>
+                <div style="margin-top: 76px;" class="wow infinite pulse col-xs-4" data-wow-duration="2s" data-wow-delay="4s">
+                    <p class="words-banner">watch</p>
+                </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-xs-8">
+                <img src="./images/logo-mywak-01.png" class="img-responsive animated bounceInDown" alt="Responsive image" style="margin:0 auto;">
+            </div>
+            <div class="col-xs-2">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div style="margin-top: 75px;" class="wow infinite pulse col-xs-4" data-wow-duration="3s" data-wow-delay="0s">
+                            <p class="words-banner">know</p>
+                        </div>
+                        <div style="margin-top: 48px; margin-left: 46px" class="wow infinite pulse col-xs-4" data-wow-delay="5s">
+                            <p class="words-banner">already</p>
+                        </div>
+                        <div style="margin-top: 76px; margin-left: 117px;" data-wow-duration="1s" class="wow infinite pulse col-xs-4" data-wow-delay="2s">
+                            <p class="words-banner">we</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="row">
@@ -85,14 +148,14 @@ function test_input($data) {
     <div class="row">
         <div class="col-lg-12 middle-section text-center">
             <h2 class="welcome-text">¡SÉ EL PRIMERO EN CONOCERLO!</h2>
-            <p><span style="color:red; font-weight: bold">Mywak</span> será un servicio que te encantará  y ser el primero en conocerlo aún más. </p>
+            <p class="texto-p"><span style="color:red; font-weight: bold">Mywak</span> será un servicio que te encantará  y ser el primero en conocerlo aún más. </p>
         </div>
     </div>
     <div class="jumbotron">
         <div class="container">
             <div class="row text-center">
                 <div class="text-center col-sm-12" style="padding-bottom: 30px">
-                    <h3>Llena la siguiente encuesta y por ser un <span style="font-weight: bold">mywak pionero</span> tendrás beneficios</h3>
+                    <p>Llena la siguiente encuesta y por ser un <span style="font-weight: bold">mywak pionero</span> tendrás beneficios</p>
                 </div>
                 <div class="col-sm-8 col-sm-offset-2">
                     <div class="panel">
@@ -118,7 +181,7 @@ function test_input($data) {
                                         <label for="barrio"class="col-sm-1 control-label">Barrio</label>
                                         <div class="col-sm-3">
                                             <input type="text" class="form-control" id="barrio" name="barrio" placeholder="Ingresa tu barrio" ng-model="barrio">
-                                            <span class="help-block" style="display: none;">Ingresa un correo v&aacute;lido</span>
+                                            <span class="help-block" style="display: none;">Ingresa un barrio</span>
                                         </div>
                                         <label for="pais"class="col-sm-1 control-label">País</label>
                                         <div class="col-sm-3">
@@ -134,7 +197,7 @@ function test_input($data) {
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <select id="hwyd" name="hwyd" class="form-control">
-                                                <option value="Quien cuida a tu perro cuando sales de casa">QUIEN CUIDA A TU PERRO CUANDO SALES DE CASA</option>
+                                                <option value="¿Qui&eacute;n cuida a tu perro cuando sales de casa?">¿QUI&Eacute;N CUIDA A TU PERRO CUANDO SALES DE CASA?</option>
                                                 <option value="GUARDERÍA">GUARDERÍA</option>
                                                 <option value="PASEAPERROS">PASEAPERROS</option>
                                                 <option value="AMIGO">AMIGO</option>
@@ -148,7 +211,7 @@ function test_input($data) {
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <select id="hltdo" name="hltdo" class="form-control">
-                                                <option value="Quien saca a tu perro a pasear">¿QUIEN SACA A TU PERRO A PASEAR?</option>
+                                                <option value="¿Qui&eacute;n saca a tu perro a pasear?">¿QUI&Eacute;N SACA A TU PERRO A PASEAR?</option>
                                                 <option value="PASEAPERROS">PASEAPERROS</option>
                                                 <option value="YO">YO</option>
                                                 <option value="DOMÉSTICA">DOMÉSTICA</option>
@@ -172,8 +235,8 @@ function test_input($data) {
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <label for="maybe"class="col-sm-1 control-label" style="padding-bottom: 15px">Por qué?:</label>
-                                            <textarea class="form-control" rows="5" id="maybe" ng-model="porque"></textarea>
+                                            <label for="maybe"class="col-sm-2 control-label" style="padding-bottom: 15px">¿Por qué?:</label>
+                                            <textarea class="form-control" rows="5" id="porque" name="porque"></textarea>
                                             <span class="help-block" style="display: none;">Ingresa un correo v&aacute;lido</span>
                                         </div>
                                     </div>
@@ -194,12 +257,12 @@ function test_input($data) {
     <div class="row">
         <div class="col-sm-12">
             <div class="col-sm-4">
-                <h3>Nuestros aliados waklovers</h3>
+                <p>Nuestros aliados waklovers</p>
             </div>
-            <div class="col-sm-2 col-sm-offset-2">
+            <div class="col-sm-4">
                 <img src="./images/logo_centro_canino.jpg" class="img-responsive" alt="Responsive image">
             </div>
-            <div class="col-sm-2 col-sm-offset-2">
+            <div class="col-sm-4">
                 <img src="./images/logo_cruz_roja.jpg" class="img-responsive" alt="Responsive image">
             </div>
         </div>
@@ -213,5 +276,10 @@ function test_input($data) {
 <script src="js/jquery.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script src="js/bootstrap.js"></script>
+
+<script src="js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
 </body>
 </html>
