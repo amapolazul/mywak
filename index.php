@@ -101,7 +101,7 @@ function test_input($data) {
         </div>
         <div class="row">
             <div class="col-xs-2">
-                <div style="margin-top: 75px; margin-left: 117px;" class="wow infinite flash" data-wow-duration="2s" data-wow-delay="3s">
+                <div style="margin-top: 75px; margin-left: 117px;" class="wow infinite pulse" data-wow-duration="2s" data-wow-delay="3s">
                     <p class="words-banner">want</p>
                 </div>
                 <div style="margin-top: 48px; margin-left: 46px" class="wow infinite pulse" data-wow-delay="1s">
