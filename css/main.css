@@ -79,7 +79,7 @@ body {
 }
 
 header {
-    background-image: url('../images/landing2-01.png');
+    background-image: url('../images/fondo-01.png');
     background-position: center center;
     height: 540px;
 }
@@ -102,7 +102,7 @@ header {
 }
 
 .welcome-text{
-    color:red;
+    color:#E52F4A;
     font-weight: bold;
     font-size: 30px;
 }
