@@ -100,29 +100,41 @@ function test_input($data) {
             </div>
         </div>
         <div class="row">
-            <div class="col-xs-2">
-                <div style="margin-top: 75px; margin-left: 117px;" class="wow infinite pulse" data-wow-duration="2s" data-wow-delay="3s">
-                    <p class="words-banner">want</p>
+            <div class="col-xs-2" style="padding-top: 75px;">
+                <div class="row">
+                    <div class="wow infinite pulse pull-right" data-wow-duration="2s" data-wow-delay="3s">
+                        <p class="words-banner">want</p>
+                    </div>
                 </div>
-                <div style="margin-top: 48px; margin-left: 46px" class="wow infinite pulse" data-wow-delay="1s">
-                    <p class="words-banner">already</p>
+                <div class="row text-center" style="padding-top: 25px;">
+                    <div class="wow infinite pulse" data-wow-delay="1s">
+                        <p class="words-banner">already</p>
+                    </div>
                 </div>
-                <div style="margin-top: 76px;" class="wow infinite pulse" data-wow-duration="2s" data-wow-delay="4s">
-                    <p class="words-banner">watch</p>
+                <div class="row">
+                    <div class="wow infinite pulse pull-left" style="padding-top: 35px;" data-wow-duration="2s" data-wow-delay="4s">
+                        <p class="words-banner">watch</p>
+                    </div>
                 </div>
             </div>
             <div class="col-xs-8">
                 <img src="./images/logo-mywak-01.png" class="img-responsive animated bounceInDown" alt="Responsive image" style="margin:0 auto;">
             </div>
-            <div class="col-xs-2">
-                <div style="margin-top: 75px;" class="wow infinite pulse" data-wow-duration="3s" data-wow-delay="0s">
-                    <p class="words-banner">know</p>
+            <div class="col-xs-2" style="padding-top: 75px;">
+                <div class="row">
+                    <div class="wow infinite pulse pull-left" data-wow-duration="2s" data-wow-delay="3s">
+                        <p class="words-banner">know</p>
+                    </div>
                 </div>
-                <div style="margin-top: 48px; margin-left: 46px" class="wow infinite pulse" data-wow-delay="5s">
-                    <p class="words-banner">already</p>
+                <div class="row text-center" style="padding-top: 25px;">
+                    <div class="wow infinite pulse" data-wow-delay="1s">
+                        <p class="words-banner">already</p>
+                    </div>
                 </div>
-                <div style="margin-top: 76px; margin-left: 117px;" data-wow-duration="4s" class="wow infinite pulse" data-wow-delay="2s">
-                    <p class="words-banner">we</p>
+                <div class="row" style="padding-top: 35px;" >
+                    <div class="wow infinite pulse pull-right" data-wow-duration="2s" data-wow-delay="4s">
+                        <p class="words-banner">we</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -146,7 +158,7 @@ function test_input($data) {
         <div class="container">
             <div class="row text-center">
                 <div class="text-center col-sm-12" style="padding-bottom: 30px">
-                    <p><span style="color: #5d5d5d">Llena la siguiente encuesta y por ser un</span> <span style="font-weight: bold">mywak pionero</span> <span style="color: #5d5d5d">tendrás beneficios</span></p>
+                    <p><span style="color: #5d5d5d">Llena la siguiente encuesta y por ser un</span> <span style="font-weight: bold">mywak pionero</span> <span style="color: #5d5d5d">tendrás beneficios:</span></p>
                 </div>
                 <div class="col-sm-8 col-sm-offset-2">
                     <div class="panel">
@@ -188,13 +200,13 @@ function test_input($data) {
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <select id="hwyd" name="hwyd" class="form-control">
-                                                <option value="¿Qui&eacute;n cuida a tu perro cuando sales de casa?">¿QUI&Eacute;N CUIDA A TU PERRO CUANDO SALES DE CASA?</option>
+                                                <option value="¿Qui&eacute;n cuida de tu perro cuando sales de casa?">¿QUI&Eacute;N CUIDA DE TU PERRO CUANDO SALES DE CASA?</option>
                                                 <option value="GUARDERÍA">GUARDERÍA</option>
                                                 <option value="PASEAPERROS">PASEAPERROS</option>
                                                 <option value="AMIGO">AMIGO</option>
                                                 <option value="ENTRENADOR">ENTRENADOR</option>
                                                 <option value="EN CASA SOLO">EN CASA SOLO</option>
-                                                <option value="DOMÉSTICA">DOMÉSTICA</option>
+                                                <option value="EMPLEADA DEL HOGAR">EMPLEADA DEL HOGAR</option>
                                             </select>
                                             <span class="help-block" style="display: none;">Ingresa un correo v&aacute;lido</span>
                                         </div>
@@ -205,7 +217,7 @@ function test_input($data) {
                                                 <option value="¿Qui&eacute;n saca a tu perro a pasear?">¿QUI&Eacute;N SACA A TU PERRO A PASEAR?</option>
                                                 <option value="PASEAPERROS">PASEAPERROS</option>
                                                 <option value="YO">YO</option>
-                                                <option value="DOMÉSTICA">DOMÉSTICA</option>
+                                                <option value="EMPLEADA DEL HOGAR">EMPLEADA DEL HOGAR</option>
                                                 <option value="ENTRENADOR">ENTRENADOR</option>
                                                 <option value="FAMILIAR">FAMILIAR</option>
                                                 <option value="AMIGO">AMIGO</option>
@@ -214,7 +226,7 @@ function test_input($data) {
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <span>SI TUVIERAS EL TIEMPO Y POR UN DINERO EXTRA CUIDARÍAS AL PERRO DE UN VECINO</span>
+                                            <span>Si eres amante de los perros, ¿quisieras ganar dinero extra?</span>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -226,7 +238,7 @@ function test_input($data) {
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <label for="maybe"class="col-sm-2 control-label" style="padding-bottom: 15px">¿Por qué?:</label>
+                                            <label for="maybe"class="col-sm-2 control-label" style="padding-bottom: 15px">¿Por qué?</label>
                                             <textarea class="form-control" rows="5" id="porque" name="porque"></textarea>
                                             <span class="help-block" style="display: none;">Ingresa un correo v&aacute;lido</span>
                                         </div>
@@ -248,7 +260,7 @@ function test_input($data) {
     <div class="row">
         <div class="col-sm-12">
             <div class="col-sm-4">
-                <p>Nuestros aliados waklovers</p>
+                <p>Nuestros aliados:</p>
             </div>
             <div class="col-sm-4">
                 <img src="./images/logo_centro_canino.jpg" class="img-responsive" alt="Responsive image">
