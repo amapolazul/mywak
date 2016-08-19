@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Agency Template</title>
+<title>Mywak | Home</title>
 
 <!-- Bootstrap -->
 <link rel="stylesheet" href="css/bootstrap.css">
@@ -22,62 +22,6 @@
     <![endif]-->
 </head>
 <body>
-<?php
-// define variables and set to empty values
-$name = $email = $barrio = $pais = $ciudad = $hwyd = $hltdo = $optradio = $porque = "";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = test_input($_POST["name"]);
-    $email = test_input($_POST["correoelectronico"]);
-    $barrio = test_input($_POST["barrio"]);
-    $pais = test_input($_POST["pais"]);
-    $ciudad = test_input($_POST["ciudad"]);
-    $hwyd = test_input($_POST["hwyd"]);
-    $hltdo = test_input($_POST["hltdo"]);
-    $ciudad = test_input($_POST["ciudad"]);
-    $optradio = test_input($_POST["optradio"]);
-    $porque = test_input($_POST["porque"]);
-
-    $to = "samantha@amapolazul.com";
-    $subject = "Correo de prueba";
-
-    $message =
-        '<html>'+
-        '<head>'+
-        '<title>Correo</title>'+
-        '</head>'+
-        '<body>'+
-        '<p>This email contains HTML Tags!</p>'+
-        '<table>'+
-        '<tr>'+
-        '<th>Firstname</th>'+
-        '<th>Lastname</th>'+
-        '</tr>'+
-        '<tr>'+
-        '<td>John</td>'+
-        '<td>Doe</td>'+
-        '</tr>'+
-        '</table>'+
-        '</body>'+
-        '</html>'
-    ;
-
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-
-    $headers .= 'From: chebbymar@gmail.com' . "\r\n";
-    $headers .= 'Cc: jason@amapolazul.com' . "\r\n";
-
-    mail($to,$subject,$message,$headers);
-}
-
-function test_input($data) {
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    return $data;
-}
-?>
 
 <!-- HEADER -->
 <header>
@@ -148,10 +92,91 @@ function test_input($data) {
 <!-- / HEADER -->
 <!--  SECTION-1 -->
 <section>
+    <?php
+    $name = $email = $barrio = $pais = $ciudad = $hwyd = $hltdo = $optradio = $porque = $cual = "";
+    $message = 'none';
+
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $name = test_input($_POST["name"]);
+        $email = test_input($_POST["correoelectronico"]);
+        $barrio = test_input($_POST["barrio"]);
+        $pais = test_input($_POST["pais"]);
+        $ciudad = test_input($_POST["ciudad"]);
+        $hwyd = test_input($_POST["hwyd"]);
+        $hltdo = test_input($_POST["hltdo"]);
+        $ciudad = test_input($_POST["ciudad"]);
+        $optradio = test_input($_POST["optradio"]);
+        $porque = test_input($_POST["porque"]);
+        $cual = test_input($_POST["cual"]);
+
+        $to = "samantha@amapolazul.com";
+        $subject = "Correo de prueba";
+
+        $message =
+            '<html>' .
+            '<head>' .
+            '<title>Mywak respuesta</title>'.
+            '</head>'.
+            '<body>'.
+            '<p>Respuesta al formulario del usuario '. $name . '</p>'.
+            '<table>'.
+            '<tr>'.
+            '<th>Nombre</th>'.
+            '<th>Correo</th>'.
+            '<th>Pais</th>'.
+            '<th>Ciudad</th>'.
+            '<th>Barrio</th>'.
+            '<th>Quien cuida a tu perro?</th>'.
+            '<th>Cual?</th>'.
+            '<th>Quien pasea a tu perro?</th>'.
+            '<th>Te gustaría ganar dinero?</th>'.
+            '<th>Porque?</th>'.
+            '</tr>'.
+            '<tr>'.
+            '<td>'.$name.'</td>'.
+            '<td>'.$email.'</td>'.
+            '<td>'.$pais.'</td>'.
+            '<td>'.$ciudad.'</td>'.
+            '<td>'.$barrio.'</td>'.
+            '<td>'.$hwyd.'</td>'.
+            '<td>'.$cual.'</td>'.
+            '<td>'.$hltdo.'</td>'.
+            '<td>'.$optradio.'</td>'.
+            '<td>'.$porque.'</td>'.
+            '</tr>'.
+            '</table>'.
+            '</body>'.
+            '</html>'
+        ;
+
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        $headers .= 'From: chebbymar@gmail.com' . "\r\n";
+        $headers .= 'Cc: jason@amapolazul.com' . "\r\n";
+
+        mail($to,$subject,$message,$headers);
+        showAlert();
+    }
+
+    function test_input($data) {
+        $data = trim($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
+    }
+
+    function showAlert() {
+        echo '<div class="alert alert-success alert-dismissible text-center" role="alert">'.
+        '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>'.
+        'Gracias por responder la encuesta, ya eres un mywak pionero. <br />'.
+        'Espera muy pronto nuestro lanzamiento.'.
+        '</div>';
+    }
+    ?>
     <div class="row">
         <div class="col-lg-12 middle-section text-center">
             <h2 class="welcome-text">¡SÉ EL PRIMERO EN CONOCERLO!</h2>
-            <p class="texto-p" style="font-weight: bold"><span style="color:#E52F4A">Mywak</span> <span style="color: #5d5d5d">será un servicio que te encantará  y ser el primero en conocerlo aún más. </span></p>
+            <p class="texto-p" style="font-weight: bold"><span style="color:#E52F4A">Mywak</span> <span style="color: #5d5d5d"> es un servicio que te encantará</span></p>
         </div>
     </div>
     <div class="jumbotron">
@@ -181,40 +206,67 @@ function test_input($data) {
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label for="barrio"class="col-sm-1 control-label">Barrio</label>
+                                        <label for="pais" class="col-sm-1 control-label">País</label>
                                         <div class="col-sm-3">
-                                            <input type="text" class="form-control" id="barrio" name="barrio" placeholder="Ingresa tu barrio" ng-model="barrio">
-                                            <span class="help-block" style="display: none;">Ingresa un barrio</span>
-                                        </div>
-                                        <label for="pais"class="col-sm-1 control-label">País</label>
-                                        <div class="col-sm-3">
-                                            <input type="text" class="form-control" id="pais" name="pais" placeholder="Ingresa tu país" ng-model="pais">
+                                            <select id="pais" name="pais" class="form-control">
+                                                <option value="Selecciona un pais" disabled selected>Tu pais</option>
+                                                <option value="Mexico">Mexico</option>
+                                                <option value="Brasil">Brazil</option>
+                                                <option value="Chile">Chile</option>
+                                                <option value="Panama">Panama</option>
+                                                <option value="Costa Rica">Costa Rica</option>
+                                                <option value="Peru">Peru</option>
+                                                <option value="Venezuela">Venezuela</option>
+                                                <option value="Colombia">Colombia</option>
+                                                <option value="Argentina">Argentina</option>
+                                                <option value="Ecuador">Ecuador</option>
+                                                <option value="Bolivia">Bolivia</option>
+                                                <option value="Guatemala">Honduras</option>
+                                                <option value="Guatemala">Nicaragua</option>
+                                                <option value="Guatemala">El Salvador</option>
+                                                <option value="Guatemala">Haiti</option>
+                                                <option value="Guatemala">Uruguay</option>
+                                                <option value="Guatemala">Cuba</option>
+                                            </select>
                                             <span class="help-block" style="display: none;">Ingresa caracteres</span>
                                         </div>
                                         <label for="ciudad"class="col-sm-1 control-label">Ciudad</label>
                                         <div class="col-sm-3">
-                                            <input type="text" class="form-control" id="ciudad" name="ciudad" placeholder="Ingresa tu ciudad" ng-model="ciudad">
+                                            <select id="ciudad" name="ciudad" class="form-control">
+                                            </select>
                                             <span class="help-block" style="display: none;">Ingresa un correo v&aacute;lido</span>
+                                        </div>
+                                        <label for="barrio"class="col-sm-1 control-label">Barrio</label>
+                                        <div class="col-sm-3">
+                                            <input type="text" class="form-control" id="barrio" name="barrio" placeholder="" ng-model="barrio">
+                                            <span class="help-block" style="display: none;">Ingresa un barrio</span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <select id="hwyd" name="hwyd" class="form-control">
-                                                <option value="¿Qui&eacute;n cuida de tu perro cuando sales de casa?">¿QUI&Eacute;N CUIDA DE TU PERRO CUANDO SALES DE CASA?</option>
+                                                <option value="¿Qui&eacute;n cuida de tu perro cuando sales de casa?" disabled selected>¿QUI&Eacute;N CUIDA DE TU PERRO CUANDO SALES DE CASA?</option>
                                                 <option value="GUARDERÍA">GUARDERÍA</option>
                                                 <option value="PASEAPERROS">PASEAPERROS</option>
                                                 <option value="AMIGO">AMIGO</option>
                                                 <option value="ENTRENADOR">ENTRENADOR</option>
                                                 <option value="EN CASA SOLO">EN CASA SOLO</option>
                                                 <option value="EMPLEADA DEL HOGAR">EMPLEADA DEL HOGAR</option>
+                                                <option value="OTRO">OTRO</option>
                                             </select>
+                                            <span class="help-block" style="display: none;">Ingresa un correo v&aacute;lido</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="cual" style="display: none">
+                                        <div class="col-sm-12">
+                                            <input type="text" class="form-control" id="cual" name="cual" placeholder="Cu&aacute;l">
                                             <span class="help-block" style="display: none;">Ingresa un correo v&aacute;lido</span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <select id="hltdo" name="hltdo" class="form-control">
-                                                <option value="¿Qui&eacute;n saca a tu perro a pasear?">¿QUI&Eacute;N SACA A TU PERRO A PASEAR?</option>
+                                                <option value="¿Qui&eacute;n saca a tu perro a pasear?" disabled selected>¿QUI&Eacute;N SACA A TU PERRO A PASEAR?</option>
                                                 <option value="PASEAPERROS">PASEAPERROS</option>
                                                 <option value="YO">YO</option>
                                                 <option value="EMPLEADA DEL HOGAR">EMPLEADA DEL HOGAR</option>
@@ -246,6 +298,9 @@ function test_input($data) {
                                     <span class="help-block" style="display: none;">Please enter a the security code.</span>
                                     <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" style=" margin-top: 10px;">Enviar</button>
                                 </form>
+                                <div style="padding-top: 27px; font-size: 11px">
+                                    * Los beneficios que se gane el pionero mywak se comunicaran al hacer el lanzamiento formal en medios.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -259,7 +314,7 @@ function test_input($data) {
 <div class="container text-center">
     <div class="row">
         <div class="col-sm-12">
-            <div class="col-sm-4">
+            <div class="col-sm-4" style="padding-top: 33px">
                 <p>Nuestros aliados:</p>
             </div>
             <div class="col-sm-4">
@@ -281,8 +336,11 @@ function test_input($data) {
 <script src="js/bootstrap.js"></script>
 
 <script src="js/wow.min.js"></script>
+<script src="js/landing.js"></script>
+<script src="js/listas.js"></script>
 <script>
     new WOW().init();
 </script>
+
 </body>
 </html>
