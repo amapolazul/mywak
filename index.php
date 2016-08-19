@@ -109,8 +109,8 @@
         $porque = test_input($_POST["porque"]);
         $cual = test_input($_POST["cual"]);
 
-        $to = "juanmartinez@seven4n.com";
-        $subject = "Correo de prueba";
+        $to = "mywaktest@mailinator.com";
+        $subject = "Respuesta formulario";
 
         $message =
             '<html>' .
@@ -151,8 +151,7 @@
 
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: chebbymar@gmail.com' . "\r\n";
-        $headers .= 'Cc: jason@amapolazul.com' . "\r\n";
+        $headers .= 'From: samantha@amapolazul.com' . "\r\n";
 
         mail($to,$subject,$message,$headers);
         showAlert();
@@ -298,7 +297,7 @@
                                     <span class="help-block" style="display: none;">Please enter a the security code.</span>
                                     <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" style=" margin-top: 10px;">Enviar</button>
                                 </form>
-                                <div style="padding-top: 27px; font-size: 11px">
+                                <div style="padding-top: 27px; font-size: 12px">
                                     * Los beneficios que se gane el pionero mywak se comunicaran al hacer el lanzamiento formal en medios.
                                 </div>
                             </div>
