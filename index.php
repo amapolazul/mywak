@@ -47,17 +47,17 @@
             <div class="col-xs-2" style="padding-top: 75px;">
                 <div class="row">
                     <div class="wow infinite pulse pull-right" data-wow-duration="2s" data-wow-delay="3s">
-                        <p class="words-banner">want</p>
+                        <span class="words-banner">want</span>
                     </div>
                 </div>
                 <div class="row text-center" style="padding-top: 25px;">
                     <div class="wow infinite pulse" data-wow-delay="1s">
-                        <p class="words-banner">already</p>
+                        <span class="words-banner">already</span>
                     </div>
                 </div>
                 <div class="row">
                     <div class="wow infinite pulse pull-left" style="padding-top: 35px;" data-wow-duration="2s" data-wow-delay="4s">
-                        <p class="words-banner">watch</p>
+                        <span class="words-banner">watch</span>
                     </div>
                 </div>
             </div>
@@ -67,17 +67,17 @@
             <div class="col-xs-2" style="padding-top: 75px;">
                 <div class="row">
                     <div class="wow infinite pulse pull-left" data-wow-duration="2s" data-wow-delay="3s">
-                        <p class="words-banner">know</p>
+                        <span class="words-banner">know</span>
                     </div>
                 </div>
                 <div class="row text-center" style="padding-top: 25px;">
                     <div class="wow infinite pulse" data-wow-delay="1s">
-                        <p class="words-banner">already</p>
+                        <span class="words-banner">already</span>
                     </div>
                 </div>
                 <div class="row" style="padding-top: 35px;" >
                     <div class="wow infinite pulse pull-right" data-wow-duration="2s" data-wow-delay="4s">
-                        <p class="words-banner">we</p>
+                        <span class="words-banner">we</span>
                     </div>
                 </div>
             </div>

@@ -118,7 +118,7 @@ p {
 
 .words-banner {
     color: white;
-    font-size: 18px;
+    font-size: 15px !important;
     opacity: 0.5;
 }
 
