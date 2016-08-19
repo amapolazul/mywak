@@ -109,7 +109,7 @@
         $porque = test_input($_POST["porque"]);
         $cual = test_input($_POST["cual"]);
 
-        $to = "samantha@amapolazul.com";
+        $to = "juanmartinez@seven4n.com";
         $subject = "Correo de prueba";
 
         $message =
