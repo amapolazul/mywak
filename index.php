@@ -331,7 +331,7 @@
     </div>
 </div>
 <footer class="text-center">
-    <a href="mailto:"> correo</a>
+    <a href="mailto:tuinvitado@mail.com?subject=Fuiste%20invitado%20a%20una%20comunidad&amp;body=%0A%C2%A1Hola!%0A%0AJer%C3%B3nimo%20Zuluaga%20ya%20asegur%C3%B3%20su%20bicicleta%20y%20t%C3%BA%20eres%20uno%20de%20sus%20elegidos%20para%20que%20formes%20parte%20de%20su%20comunidad%20de%20aseguramiento%20en%20Wesura.%0AUn%20seguro%20para%20tu%20bici%20con%3A%0A%0A%E2%80%A2%20Cobertura%20en%20caso%20de%20robo%2C%20p%C3%A9rdida%20o%20da%C3%B1o%20total.*%0A%E2%80%A2%20Pago%20en%20caso%20de%20siniestro%20en%20una%20semana%20sin%20largos%20tr%C3%A1mites.%0A%E2%80%A2%20Devoluci%C3%B3n%20de%20una%20buena%20parte%20de%20tu%20aporte%20si%20no%20ocurre%20nada.%0A%0A%C3%9Anete%2C%20entre%20m%C3%A1s%20amigos%20sean%2C%20tendr%C3%A1n%20mayores%20coberturas.%0A%0AUnirme%20a%20la%20comunidad%2C%20clic%20aqu%C3%AD%3A%0Ahttp%3A%2F%2Fdev.wesura.com%2Ftoken-invitacion%2F98dfea0c-5341-4cd9-82df-589215a1e824%2F%3Futm_source%3Demail%26utm_medium%3Dlink%26utm_campaign%3Dinvitacion%26utm_term%3DInvitacion_para_monitorear_el_uso_de_los_links_de_invitaci%25C3%25B3n_y_el_impacto_sobre_los_medios_ofrecidos%0A%0A%C2%BFPreguntas%3F%20El%20equipo%20de%20Wesura%20est%C3%A1%20siempre%20para%20ayudarte%2C%20escr%C3%ADbenos%20a%3A%20info%40wesura.com">Enviar invitación</a>
 </footer>
 <!-- / FOOTER --> 
 
