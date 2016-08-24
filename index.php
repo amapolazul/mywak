@@ -28,16 +28,19 @@
     <div class="container">
         <div class="row">
             <div class="cont">
-                <div class="col-xs-9 left">
+                <div class="col-xs-8 left">
                     <img src="./images/landing2-04.png" class="img-responsive" alt="Responsive image">
                 </div>
-                <div class="col-xs-3">
+                <div class="col-xs-4">
                     <div class="row">
                         <div class="ico">
                             <a href="#"> <img src="./images/landing2-07.png" class="img-responsive" alt="Responsive image"></a>
                         </div>
                         <div class="ico">
                             <a href="#"> <img src="./images/landing2-06.png" class="img-responsive" alt="Responsive image"></a>
+                        </div>
+                        <div class="ico">
+                            <a href="#"> <img src="./images/instagram-01.png" class="img-responsive" alt="Responsive image"></a>
                         </div>
                     </div>
                 </div>
@@ -106,10 +109,10 @@
         $hltdo = test_input($_POST["hltdo"]);
         $ciudad = test_input($_POST["ciudad"]);
         $optradio = test_input($_POST["optradio"]);
-        $porque = test_input($_POST["porque"]);
+        //$porque = test_input($_POST["porque"]);
         $cual = test_input($_POST["cual"]);
 
-        $to = "mywaktest@mailinator.com";
+        $to = "admin@mywak.com.co";
         $subject = "Respuesta formulario";
 
         $message =
@@ -130,7 +133,7 @@
             '<th>Cual?</th>'.
             '<th>Quien pasea a tu perro?</th>'.
             '<th>Te gustaría ganar dinero?</th>'.
-            '<th>Porque?</th>'.
+            //'<th>Porque?</th>'.
             '</tr>'.
             '<tr>'.
             '<td>'.$name.'</td>'.
@@ -142,7 +145,7 @@
             '<td>'.$cual.'</td>'.
             '<td>'.$hltdo.'</td>'.
             '<td>'.$optradio.'</td>'.
-            '<td>'.$porque.'</td>'.
+            //'<td>'.$porque.'</td>'.
             '</tr>'.
             '</table>'.
             '</body>'.
@@ -151,7 +154,7 @@
 
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-        $headers .= 'From: samantha@amapolazul.com' . "\r\n";
+        $headers .= 'From: admin@mywak.com.co' . "\r\n";
 
         mail($to,$subject,$message,$headers);
         showAlert();
@@ -175,14 +178,14 @@
     <div class="row">
         <div class="col-lg-12 middle-section text-center">
             <h2 class="welcome-text">¡SÉ EL PRIMERO EN CONOCERLO!</h2>
-            <p class="texto-p" style="font-weight: bold"><span style="color:#E52F4A">Mywak</span> <span style="color: #5d5d5d"> es un servicio que te encantará</span></p>
+            <p class="texto-p" style="font-weight: bold"><span style="color:#E52F4A">mywak</span> <span style="color: #5d5d5d"> es un servicio que te encantará</span></p>
         </div>
     </div>
     <div class="jumbotron">
         <div class="container">
             <div class="row text-center">
                 <div class="text-center col-sm-12" style="padding-bottom: 30px">
-                    <p><span style="color: #5d5d5d">Llena la siguiente encuesta y por ser un</span> <span style="font-weight: bold">mywak pionero</span> <span style="color: #5d5d5d">tendrás beneficios:</span></p>
+                    <p><span style="color: #5d5d5d">Llena la siguiente información y obtén beneficios por ser</span> <span style="font-weight: bold">pionero de mywak</span></p>
                 </div>
                 <div class="col-sm-8 col-sm-offset-2">
                     <div class="panel">
@@ -209,23 +212,23 @@
                                         <div class="col-sm-3">
                                             <select id="pais" name="pais" class="form-control">
                                                 <option value="Selecciona un pais" disabled selected>Tu pais</option>
-                                                <option value="Mexico">Mexico</option>
-                                                <option value="Brasil">Brazil</option>
-                                                <option value="Chile">Chile</option>
-                                                <option value="Panama">Panama</option>
-                                                <option value="Costa Rica">Costa Rica</option>
-                                                <option value="Peru">Peru</option>
-                                                <option value="Venezuela">Venezuela</option>
-                                                <option value="Colombia">Colombia</option>
                                                 <option value="Argentina">Argentina</option>
-                                                <option value="Ecuador">Ecuador</option>
+                                                <option value="Brasil">Brazil</option>
                                                 <option value="Bolivia">Bolivia</option>
-                                                <option value="Guatemala">Honduras</option>
-                                                <option value="Guatemala">Nicaragua</option>
-                                                <option value="Guatemala">El Salvador</option>
-                                                <option value="Guatemala">Haiti</option>
-                                                <option value="Guatemala">Uruguay</option>
+                                                <option value="Chile">Chile</option>
+                                                <option value="Colombia">Colombia</option>
+                                                <option value="Costa Rica">Costa Rica</option>
                                                 <option value="Guatemala">Cuba</option>
+                                                <option value="Ecuador">Ecuador</option>
+                                                <option value="El Salvador">El Salvador</option>
+                                                <option value="Haiti">Haiti</option>
+                                                <option value="Honduras">Honduras</option>
+                                                <option value="Mexico">Mexico</option>
+                                                <option value="Nicaragua">Nicaragua</option>
+                                                <option value="Panama">Panama</option>
+                                                <option value="Peru">Peru</option>
+                                                <option value="Uruguay">Uruguay</option>
+                                                <option value="Venezuela">Venezuela</option>
                                             </select>
                                             <span class="help-block" style="display: none;">Ingresa caracteres</span>
                                         </div>
@@ -277,28 +280,28 @@
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
-                                            <span>Si eres amante de los perros, ¿quisieras ganar dinero extra?</span>
+                                            <span>¿Pasearías al  perro de un vecino por un dinero extra?</span>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <div class="col-sm-12">
                                             <label class="radio-inline"><input type="radio" name="optradio" value="si" ng-model="tiempo">Si</label>
                                             <label class="radio-inline"><input type="radio" name="optradio" value="no" ng-model="tiempo">No</label>
-                                            <label class="radio-inline"><input type="radio" name="optradio" value="Tal vez" ng-model="tiempo">Tal vez</label>
+<!--                                            <label class="radio-inline"><input type="radio" name="optradio" value="Tal vez" ng-model="tiempo">Tal vez</label>-->
                                         </div>
                                     </div>
-                                    <div class="form-group">
-                                        <div class="col-sm-12">
-                                            <label for="maybe"class="col-sm-2 control-label" style="padding-bottom: 15px">¿Por qué?</label>
-                                            <textarea class="form-control" rows="5" id="porque" name="porque"></textarea>
-                                            <span class="help-block" style="display: none;">Ingresa un correo v&aacute;lido</span>
-                                        </div>
-                                    </div>
-                                    <span class="help-block" style="display: none;">Please enter a the security code.</span>
+<!--                                    <div class="form-group">-->
+<!--                                        <div class="col-sm-12">-->
+<!--                                            <label for="maybe"class="col-sm-2 control-label" style="padding-bottom: 15px">¿Por qué?</label>-->
+<!--                                            <textarea class="form-control" rows="5" id="porque" name="porque"></textarea>-->
+<!--                                            <span class="help-block" style="display: none;">Ingresa un correo v&aacute;lido</span>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <span class="help-block" style="display: none;">Please enter a the security code.</span>-->
                                     <button type="submit" id="feedbackSubmit" class="btn btn-primary btn-lg" style=" margin-top: 10px;">Enviar</button>
                                 </form>
                                 <div style="padding-top: 27px; font-size: 12px">
-                                    * Los beneficios que se gane el pionero mywak se comunicaran al hacer el lanzamiento formal en medios.
+                                    * Los beneficios del pionero mywak se comunicarán por correo electrónico.
                                 </div>
                             </div>
                         </div>
@@ -314,18 +317,21 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="col-sm-4" style="padding-top: 33px">
-                <p>Nuestros aliados:</p>
+                <p>Nuestros Aliados:</p>
             </div>
             <div class="col-sm-4">
-                <img src="./images/logo_centro_canino.jpg" class="img-responsive" alt="Responsive image">
+                <div style="background-image: url('./images/logo_centro_canino.jpg'); background-position: center center; height: 100px; background-repeat: no-repeat;"></div>
+<!--                <img src="./images/logo_centro_canino.jpg" class="img-responsive" alt="Responsive image">-->
             </div>
             <div class="col-sm-4">
-                <img src="./images/logo_cruz_roja.jpg" class="img-responsive" alt="Responsive image">
+                <div style="background-image: url('./images/logo_cruz_roja.jpg'); background-position: center center; height: 100px; background-repeat: no-repeat;"></div>
+<!--                <img src="./images/logo_cruz_roja.jpg" class="img-responsive" alt="Responsive image">-->
             </div>
         </div>
     </div>
 </div>
 <footer class="text-center">
+    <a href="mailto:"> correo</a>
 </footer>
 <!-- / FOOTER --> 
 

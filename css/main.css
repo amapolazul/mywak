@@ -121,3 +121,9 @@ p {
     font-size: 15px !important;
 }
 
+.imageFooter2{
+    background-image: url("../images/logo_cruz_roja.jpg");
+    background-position: center center;
+    height: 100px;
+    background-repeat: no-repeat;
+}

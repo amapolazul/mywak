@@ -11,6 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     $decoded = utf8_encode($string);
     $json = json_decode($string);
     $cities = $json -> $country;
+    sort($cities);
     foreach ($cities as $city) {
         echo '<option value="'.$city.'">'.$city.'</option>';
     }
